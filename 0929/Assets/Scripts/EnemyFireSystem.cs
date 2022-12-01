@@ -8,24 +8,21 @@ namespace xin
     {
         [SerializeField, Header("生成子彈間隔"), Range(0, 3)]
         private float interval = 1.5f;
-        
-        
+       
         private void Awake()
+        {
+
+        }
+        private void OnBecameVisible()
         {
             //取消的SpawnBullet();
             //延遲重複呼叫("方法名稱".延續時間.重複頻率)
             InvokeRepeating("SpawnBullet", 0, interval);
-
         }
 
-
-
-
-
-
+        private void OnBecameInvisible()
+        {
+            Destroy(gameObject);
+        }
     }
-
-
-
-
 }

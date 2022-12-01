@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 1319869445609040165}
   - component: {fileID: 1868238508829273466}
   - component: {fileID: 5712970259456989442}
+  - component: {fileID: 990433580110082916}
+  - component: {fileID: 9194933023579451331}
   m_Layer: 0
   m_Name: "\u6575\u6A5F"
   m_TagString: Untagged
@@ -145,6 +147,36 @@ CircleCollider2D:
   m_Offset: {x: 0.16, y: 0}
   serializedVersion: 2
   m_Radius: 1.0357143
+--- !u!114 &990433580110082916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319869445609040166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 005edcebd7fa2bc4ea568728d4695bab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabExplosion: {fileID: 0}
+  nameTarget: 
+--- !u!114 &9194933023579451331
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1319869445609040166}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e3637de2bba0de4d9db6ba5b7e4e38d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabBullet: {fileID: 3255709982118057570, guid: a07f04e0de009a54491f15669eca1d8e, type: 3}
+  pointSpawn: {fileID: 0}
+  soundFire: {fileID: 8300000, guid: 033b1daf4512444018111f90f909d172, type: 3}
+  interval: 1.5
 --- !u!1 &8993886805920912362
 GameObject:
   m_ObjectHideFlags: 0
